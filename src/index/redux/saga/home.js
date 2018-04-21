@@ -1,7 +1,7 @@
 import {takeEvery, takeLatest} from 'redux-saga/effects';
 import {put} from 'redux-saga/effects';
 import {HOME_INCREMENT_ASYNC, HOME_GETTOKEN} from '../actions/home';
-import {Ajax} from '../../service/axios';
+import {Ajax} from '../../API/axios';
 
 // 一个工具函数：返回一个 Promise，这个 Promise 将在 1 秒后 resolve
 export const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));

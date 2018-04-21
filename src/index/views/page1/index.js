@@ -1,38 +1,61 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
 import {hot} from 'react-hot-loader'
-import Utility from '../../Common/Utility';
-import ApiInfo from '../../service/ApiClient';
-import * as CommonActions from 'reducers/reduxCommon';
-import './page1.scss'
+import PropTypes from 'prop-types'
+import './index.scss'
+import {Button} from 'antd';
 
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux'
+import {getData,removeData} from '../../redux/actions/page1'
+import {saveUserInfo} from '../../redux/actions/global'
 @connect((state) => {
     return ({
-        UserList: state.Common.UserList,
-        Demo: state.Common.Demo,
-        MapPlacelist: state.Common.MapPlacelist
+        pageData: state.page1.pageData,
+        pageList: state.page1.pageList,
+        userInfo: state.global.userInfo,
     })
-}, {...CommonActions})
+},(dispatch)=>{
+    return {
+        getData:bindActionCreators(getData,dispatch),
+        removeData:bindActionCreators(removeData,dispatch),
+        saveUserInfo:bindActionCreators(saveUserInfo,dispatch),
+    }
+})
 class Page1 extends Component {
     static propTypes = {
-        UserList: PropTypes.any,
-        Demo: PropTypes.any,
-        MapPlacelist: PropTypes.any,
-        onApiGet: PropTypes.func
+        pageData: PropTypes.object,
+        pageList: PropTypes.array,
     }
 
     constructor(props) {
-        console.log(props)
         super(props);
         this.state = {};
     }
+    componentDidMount() {
+        console.log(this.props);
+        console.log(this.state);
+    }
+    jump(){
+        let {history} = this.props
+        history.push('/page2')
+    }
+    async getTest(){
 
+    }
     render() {
-        const {UserList} = this.props;
+        let {getData,pageList = [],removeData,userInfo,saveUserInfo} = this.props
         return (
             <div className="page1">
-                page112322222
+                <Button type="primary" onClick={()=>{getData()}} >获取page1数据</Button>
+                <Button type="primary" onClick={()=>{this.jump()}}>跳转到page2</Button>
+                <Button type="primary" onClick={()=>{saveUserInfo(123)}}>保存用户信息</Button>
+                <Button type="primary" onClick={()=>{this.getTest()}}>请求</Button>
+                <div>
+                    {pageList.map((v,i) => {
+                        return <div key={i}>{v.name}<Button type="danger" size={'small'} onClick={()=>{removeData(v)}}>删除</Button></div>
+                    })}
+                </div>
+                <div>{userInfo}</div>
             </div>
 
         );

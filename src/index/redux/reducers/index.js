@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
 
-import Common from './reduxCommon';
-import home from './home';
+import global from './reduxGlobal';
+import page1 from './page1';
 
 export default combineReducers({
-  home, Common
+   global,page1
 });

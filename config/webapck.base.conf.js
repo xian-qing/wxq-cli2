@@ -8,28 +8,33 @@ const config = {
         rules: [
             {
                 test: /\.(js|jsX)$/,
-                use:[
-                   { loader: require.resolve('babel-loader'),
-                       options: {
-                           cacheDirectory: true,
-                           highlightCode: true,
-                           compact: process.env.NODE_ENV !== 'development',
-                           plugins: ['react-hot-loader/babel'],
-                       }
-                   }
+                use: [
+                    {
+                        loader: require.resolve('babel-loader'),
+                        options: {
+                            cacheDirectory: true,
+                            highlightCode: true,
+                            compact: process.env.NODE_ENV !== 'development',
+                            plugins: ['react-hot-loader/babel'],
+                        }
+                    }
                 ],
 
                 include: path.join(APP_PATH, 'src')
             },
-            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+            {   test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
             {
                 test: /\.scss$/,
                 use: [
-                    { loader: 'style-loader' },
+                    {
+                        loader: 'style-loader'
+                    },
                     {
                         loader: 'css-loader', options: {
                             sourceMap: true, modules: true,
-                            importLoaders:1,
+                            importLoaders: 1,
                             //localIdentName: '[local]_[hash:base64:5]'
                             localIdentName: '[local]'
                         }
@@ -44,7 +49,7 @@ const config = {
                         }
                     },
                     {
-                        loader: 'sass-loader', options: { sourceMap: true }
+                        loader: 'sass-loader', options: {sourceMap: true}
                     }
                 ]
             },
@@ -52,7 +57,7 @@ const config = {
                 test: /\.(png|jp?g|gif|svg|svga|eot|ttf|woff|woff2)$/,
                 use: [
                     {
-                        loader: 'url-loader', options: { limit: 8192 ,name : 'image/[name].[ext]',}
+                        loader: 'url-loader', options: {limit: 8192, name: 'image/[name].[ext]',}
                     }
                 ]
             },
@@ -68,8 +73,6 @@ const config = {
             styles: path.join(APP_PATH, 'src/index/styles')
         }
     },
-    plugins: [
-
-    ],
+    plugins: [],
 }
 module.exports = config;

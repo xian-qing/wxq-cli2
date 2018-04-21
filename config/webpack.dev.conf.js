@@ -4,7 +4,7 @@ const merge = require('webpack-merge')
 const path = require('path')
 const APP_PATH = path.join(__dirname, '..');
 const baseWebpackConfig = require('./webapck.base.conf')
-const {srcPages,buildDir,rewrites} = require('./file.conf')
+const {srcPages,buildDir,rewrites,proxy} = require('./file.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
@@ -21,7 +21,6 @@ let getEntry = () => {
 let htmlPlugin= ()=>{
     let htmlPlugin = []
     Object.keys(srcPages).forEach((v=>{
-        console.log(v)
         htmlPlugin.push(
             new HtmlWebpackPlugin({
                 filename: `${v}.html`,
@@ -39,7 +38,7 @@ let config = merge(baseWebpackConfig,{
     //开发环境配置
     entry:getEntry(),
     mode:'development',
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     output:{
         path:path.resolve(buildDir),
         filename:"js/[name].js",
@@ -67,6 +66,7 @@ let config = merge(baseWebpackConfig,{
             aggregateTimeout: 300,
             poll: 1000
         },
+        proxy:proxy,
         after(){
             console.log(`打开浏览器：http://localhost:${this.port}`)
             //opn(`http://localhost:${this.port}`)

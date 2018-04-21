@@ -1,11 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-
-
 import {asyncComponent} from './asyncCompont';
-
-const home = asyncComponent(() => import(/* webpackChunkName: "js/home" */ "../views/home/index.js"));
-//import home from '../views/home/index'
 const page1 = asyncComponent(() => import(/* webpackChunkName: "js/page2" */ "../views/page1/index.js"));
 const page2 = asyncComponent(() => import(/* webpackChunkName: "js/page2" */ "../views/page2/index.js"));
 
