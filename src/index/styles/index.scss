@@ -1,4 +1,28 @@
-#app{
-  background: red;
-  color: greenyellow;
+@import "./_normalize.scss";
+@import "./_reset.scss";
+@import "./_base.scss";
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", "微软雅黑", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  font-size: 14px;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  .ant-input-affix-wrapper .ant-input{
+    min-height: 32px;
+  }
 }

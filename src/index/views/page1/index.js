@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import {hot} from 'react-hot-loader'
 import PropTypes from 'prop-types'
 import './index.scss'
-import {Button} from 'antd';
+import {
+    Button,
+    Input,
+} from 'antd';
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux'
@@ -46,7 +49,7 @@ class Page1 extends Component {
         let {getData,pageList = [],removeData,userInfo,saveUserInfo} = this.props
         return (
             <div className="page1">
-                <Button type="primary" onClick={()=>{getData()}} >获取page1数据</Button>
+                <Button type="primary" onClick={()=>{getData()}} >获取page1数据1</Button>
                 <Button type="primary" onClick={()=>{this.jump()}}>跳转到page2</Button>
                 <Button type="primary" onClick={()=>{saveUserInfo(123)}}>保存用户信息</Button>
                 <Button type="primary" onClick={()=>{this.getTest()}}>请求</Button>
@@ -56,6 +59,7 @@ class Page1 extends Component {
                     })}
                 </div>
                 <div>{userInfo}</div>
+
             </div>
 
         );
