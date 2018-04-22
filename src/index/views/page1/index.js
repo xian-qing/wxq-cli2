@@ -49,7 +49,8 @@ class Page1 extends Component {
         let {getData,pageList = [],removeData,userInfo,saveUserInfo} = this.props
         return (
             <div className="page1">
-                <Button type="primary" onClick={()=>{getData()}} >获取page1数据1</Button>
+                ddd
+                <Button type="primary" onClick={()=>{getData()}} >获取page1数据</Button>
                 <Button type="primary" onClick={()=>{this.jump()}}>跳转到page2</Button>
                 <Button type="primary" onClick={()=>{saveUserInfo(123)}}>保存用户信息</Button>
                 <Button type="primary" onClick={()=>{this.getTest()}}>请求</Button>
