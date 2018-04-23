@@ -9,7 +9,7 @@ import {
 
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux'
-import {getData,removeData} from '../../redux/actions/page1'
+import {getData,removeData,getXintiaoData} from '../../redux/actions/page1'
 import {saveUserInfo} from '../../redux/actions/global'
 @connect((state) => {
     return ({
@@ -20,6 +20,7 @@ import {saveUserInfo} from '../../redux/actions/global'
 },(dispatch)=>{
     return {
         getData:bindActionCreators(getData,dispatch),
+        getXintiaoData:bindActionCreators(getXintiaoData,dispatch),
         removeData:bindActionCreators(removeData,dispatch),
         saveUserInfo:bindActionCreators(saveUserInfo,dispatch),
     }
@@ -47,14 +48,14 @@ class Page1 extends Component {
 
     }
     render() {
-        let {getData,pageList = [],removeData,userInfo,saveUserInfo} = this.props
+        let {getData,pageList = [],removeData,userInfo,saveUserInfo,getXintiaoData} = this.props
         return (
             <div className="page1">
                 ddd
                 <Button type="primary" onClick={()=>{getData()}} >获取page1数据</Button>
                 <Button type="primary" onClick={()=>{this.jump('/page2')}}>跳转到page2</Button>
                 <Button type="primary" onClick={()=>{saveUserInfo(123)}}>保存用户信息</Button>
-                <Button type="primary" onClick={()=>{this.getTest()}}>请求</Button>
+                <Button type="primary" onClick={()=>{getXintiaoData()}}>请求</Button>
                 <Button type="primary" onClick={()=>{this.jump('/login')}}>登录页面</Button>
                 <div>
                     {pageList.map((v,i) => {

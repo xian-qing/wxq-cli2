@@ -13,6 +13,11 @@ module.exports = {
             target: 'http://test.api.v2.jggvip.com',
             changeOrigin: true,
             //secure: false
+        },
+        '/hook/': {
+            target: 'http://h5.xintiaotime.com',
+            changeOrigin: true,
+            //secure: false
         }
     },
 }

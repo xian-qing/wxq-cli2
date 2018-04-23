@@ -20,6 +20,12 @@ function* getData(action) {
     }
 }
 
+function* getXintiaoData(action) {
+    const posts = yield call(AxiosGetList, action) || []
+    console.log(posts)
+    //yield put({type: PAGE1_GETLIST, list: posts});
+}
+
 function* removeData(action) {
     try {
         const list = [];
@@ -32,5 +38,6 @@ function* removeData(action) {
 
 export {
     getData,
-    removeData
+    removeData,
+    getXintiaoData
 }
