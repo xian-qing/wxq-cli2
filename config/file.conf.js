@@ -1,5 +1,5 @@
 module.exports = {
-    buildDir: 'dist/index',
+    buildDir: 'dist/',
     srcPages: {
         index: "dist/index",
         shop: "dist/shop"

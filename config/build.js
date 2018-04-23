@@ -37,16 +37,23 @@ Promise.all(
 }).catch((err) => {
     console.log("\n wxq-cli error "+err)
 })
-// gulp.task("task1",function(cb){
-//     build('index')
-//     console.log(1111111111111)
-// });
-// gulp.task("task2",["task1"],function(cb){
-//     build('shop')
-//     console.log(2222222222222)
-// });
-// gulp.task("default",["task1","task2"],function(){
 //
+// let task = []
+//      Object.keys(srcPages).map((v)=>{
+//          task.push(v)
+//          gulp.task(v,function(cb){
+//              console.log(`=====task==${v}==`)
+//              build(v)
+//          });
+//      })
+//
+// // gulp.task("task1",function(cb){
+// //     build('index')
+// // });
+// // gulp.task("task2",function(cb){
+// //     build('shop')
+// // });
+// gulp.task("default",task,function(){
 //     console.log("---------------default-task---------------");
 // });
 // gulp.start()
