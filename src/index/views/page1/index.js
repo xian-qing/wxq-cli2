@@ -38,9 +38,10 @@ class Page1 extends Component {
         console.log(this.props);
         console.log(this.state);
     }
-    jump(){
+    jump(page){
+        console.log(page)
         let {history} = this.props
-        history.push('/page2')
+        history.push(page)
     }
     async getTest(){
 
@@ -51,7 +52,8 @@ class Page1 extends Component {
             <div className="page1">
                 ddd
                 <Button type="primary" onClick={()=>{getData()}} >获取page1数据8</Button>
-                <Button type="primary" onClick={()=>{this.jump()}}>跳转到page2</Button>
+                <Button type="primary" onClick={()=>{this.jump('/page2')}}>跳转到page2</Button>
+                <Button type="primary" onClick={()=>{this.jump('/login')}}>登录页面</Button>
                 <Button type="primary" onClick={()=>{saveUserInfo(123)}}>保存用户信息</Button>
                 <Button type="primary" onClick={()=>{this.getTest()}}>请求</Button>
                 <div>
