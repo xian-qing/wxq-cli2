@@ -7,6 +7,7 @@ const baseWebpackConfig = require('./webapck.base.conf')
 const fileConfig = require('./file.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 process.env.BABEL_ENV = 'production'
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 let config = function (page) {
     let pageDir = page||'index'
@@ -23,11 +24,50 @@ let config = function (page) {
             chunkFilename:"js/[name].js",
             publicPath:`/static/`
         },
+        module:{
+            rules:[
+                {   test: /\.css$/,
+                    use: [ MiniCssExtractPlugin.loader,'css-loader']
+                },
+                {
+                    test: /\.scss$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: 'css-loader', options: {
+                                sourceMap: true, modules: true,
+                                importLoaders: 2,
+                                //localIdentName: '[local]_[hash:base64:5]'
+                                localIdentName: '[local]'
+                            }
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                sourceMap: true,
+                                config: {
+                                    path: 'postcss.config.js'
+                                }
+                            }
+                        },
+                        {
+                            loader: 'sass-loader', options: {sourceMap: true}
+                        }
+                    ]
+                },
+            ]
+        },
         plugins:[
             new HtmlWebpackPlugin({
                 filename: `${pageDir}.html`,
                 template: path.join(APP_PATH, `src/${pageDir}/${pageDir}.html`)
             }),
+            new MiniCssExtractPlugin({
+                // Options similar to the same options in webpackOptions.output
+                // both options are optional
+                filename: "css/[name].css",
+                chunkFilename: "css/[name].css"
+            })
 
         ],
         optimization: {
