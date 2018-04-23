@@ -5,6 +5,7 @@ export const PAGE1_GETLIST = 'page1/getList';
 export const PAGE1_GETDATA = 'page1/getData';
 export const PAGE1_REMOVEDATA = 'page1/removeData';
 export const PAGE1_GETXINTIAODATA = 'page1/getXintiaoData';
+export const PAGE1_SAVEXINTIAODATA = 'page1/saveXintiaoData';
 
 
 export function unmount() {

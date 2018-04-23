@@ -5,25 +5,22 @@ import {
     takeLatest
 } from 'redux-saga/effects'
 import {
-    PAGE1_GETLIST,
+    PAGE1_GETLIST, PAGE1_SAVEXINTIAODATA
 } from "../actions/page1";
 import {AxiosGetJSon,AxiosGetList} from '../../API/page1Service';
 
 
 
 function* getData(action) {
-    try {
-        const posts = yield call(AxiosGetJSon, action) || []
-        yield put({type: PAGE1_GETLIST, list: posts});
-    } catch (e) {
-        yield put({type: PAGE1_GETLIST, message: e.message});
-    }
+    const posts = yield call(AxiosGetJSon, action) || []
+    yield put({type: PAGE1_GETLIST, list: posts});
 }
 
 function* getXintiaoData(action) {
     const posts = yield call(AxiosGetList, action) || []
-    console.log(posts)
-    //yield put({type: PAGE1_GETLIST, list: posts});
+    let data = posts.data
+    console.log(data)
+    yield put({type: PAGE1_SAVEXINTIAODATA, data: data});
 }
 
 function* removeData(action) {

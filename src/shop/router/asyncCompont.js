@@ -8,7 +8,6 @@ export const asyncComponent = (loadComponent) => (
     };
 
     componentWillMount() {
-      console.log(123123)
       if (this.hasLoadedComponent()) {
         return;
       }

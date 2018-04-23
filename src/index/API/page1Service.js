@@ -10,15 +10,15 @@ export function AxiosGetJSon(reddit) {
     }).then(data => {
         console.log(data)
         return data.data.children.map((child,idx) => child.data)
-    }).catch(e=>{
-        console.log(e.message)
+    }).catch(err=>{
+        message.error(err.message,1);
     })
 }
 
 export function AxiosGetList(reddit) {
     return Axios({
         method: "GET",
-        url: `/hook/piece/get?piece_id22=122206427`,
+        url: `/hook/piece/get?piece_id=106427`,
     }).then(response => {
       return response
     }).catch(err=>{

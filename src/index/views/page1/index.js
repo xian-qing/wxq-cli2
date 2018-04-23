@@ -15,7 +15,9 @@ import {saveUserInfo} from '../../redux/actions/global'
     return ({
         pageData: state.page1.pageData,
         pageList: state.page1.pageList,
+        xintiaoData: state.page1.xintiaoData,
         userInfo: state.global.userInfo,
+
     })
 },(dispatch)=>{
     return {
@@ -29,6 +31,8 @@ class Page1 extends Component {
     static propTypes = {
         pageData: PropTypes.object,
         pageList: PropTypes.array,
+        xintiaoData: PropTypes.object,
+        userInfo: PropTypes.object,
     }
 
     constructor(props) {
@@ -36,8 +40,8 @@ class Page1 extends Component {
         this.state = {};
     }
     componentDidMount() {
-        console.log(this.props);
-        console.log(this.state);
+        //console.log(this.props);
+        //console.log(this.state);
     }
     jump(page){
         console.log(page)
@@ -48,7 +52,7 @@ class Page1 extends Component {
 
     }
     render() {
-        let {getData,pageList = [],removeData,userInfo,saveUserInfo,getXintiaoData} = this.props
+        let {getData,pageList = [],removeData,userInfo,saveUserInfo,getXintiaoData,xintiaoData} = this.props
         return (
             <div className="page1">
                 ddd
@@ -62,7 +66,8 @@ class Page1 extends Component {
                         return <div key={i}>{v.name}<Button type="danger" size={'small'} onClick={()=>{removeData(v)}}>删除</Button></div>
                     })}
                 </div>
-                <div>{userInfo}</div>
+                <div>{JSON.stringify(userInfo)}</div>
+                <div>{JSON.stringify(xintiaoData)}</div>
 
             </div>
 

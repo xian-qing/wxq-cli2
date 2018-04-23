@@ -12,6 +12,7 @@ app.use('/static',express.static(path.join(APP_PATH,'./dist/static')));
 
 app.use('/api', proxy({ target: 'http://119.28.34.31', changeOrigin: true }));
 app.use('/graphql', proxy({ target: 'http://119.28.183.86', changeOrigin: true }));
+app.use('/hook', proxy({ target: 'http://h5.xintiaotime.com', changeOrigin: true }));
 
 
 app.get('/index/*', function(req, response){

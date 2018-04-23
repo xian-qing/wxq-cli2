@@ -1,24 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/index.scss';
-import {Provider} from 'react-redux';
-
-import BuildStore from './redux/store';
-import createHistory from 'history/createBrowserHistory';
-
-const history = createHistory();
-const ApiClientStore = BuildStore(history);
-
-import getRouter from './router/router';
-import {Router} from 'react-router';
+import React, {Component} from 'react';
+import ReactDOM ,{unmountComponentAtNode}from 'react-dom';
+import { AppContainer } from 'react-hot-loader'
+import APP from './views/app';
 
 function renderWithHotReload(RootElement) {
     ReactDOM.render(
-        <Provider store={ApiClientStore} key="provider">
-            <Router history={history}>
-                {RootElement}
-            </Router>
-        </Provider>,
+        <AppContainer>
+            <RootElement/>
+        </AppContainer>,
         document.getElementById('app')
     );
 }
@@ -26,14 +15,16 @@ function renderWithHotReload(RootElement) {
 /**
  * 初始化
  */
-renderWithHotReload(getRouter());
+renderWithHotReload(APP);
 
 /**
  * 热更新
  */
 if (module.hot) {
-    module.hot.accept('./router/router', () => {
-        const hotRouter = require('./router/router').default;
-        renderWithHotReload(hotRouter());
+    module.hot.accept('./views/app', () => {
+        let APP = require('./views/app').default;
+        const root = document.getElementById('app')
+        unmountComponentAtNode(root)
+        renderWithHotReload(APP);
     });
 }

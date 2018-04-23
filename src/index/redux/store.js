@@ -17,7 +17,7 @@ export default function configureStore(history) {
         reduxRouterMiddleware,
         sagaMiddleware
     ]
-    if (false) {
+    if (process.env.BABEL_ENV = 'development') {
         middleware.push(logger)
     }
     const store = createStore(
