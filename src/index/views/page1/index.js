@@ -58,7 +58,7 @@ class Page1 extends Component {
                 ddd
                 <Button type="primary" onClick={()=>{getData()}} >获取page1数据</Button>
                 <Button type="primary" onClick={()=>{this.jump('/page2')}}>跳转到page2</Button>
-                <Button type="primary" onClick={()=>{saveUserInfo(123)}}>保存用户信息</Button>
+                <Button type="primary" onClick={()=>{saveUserInfo({uid:12,name:"wxq"})}}>保存用户信息</Button>
                 <Button type="primary" onClick={()=>{getXintiaoData()}}>请求</Button>
                 <Button type="primary" onClick={()=>{this.jump('/login')}}>登录页面</Button>
                 <div>
@@ -66,7 +66,7 @@ class Page1 extends Component {
                         return <div key={i}>{v.name}<Button type="danger" size={'small'} onClick={()=>{removeData(v)}}>删除</Button></div>
                     })}
                 </div>
-                <div>{JSON.stringify(userInfo)}</div>
+                <div>{userInfo}</div>
                 <div>{JSON.stringify(xintiaoData)}</div>
 
             </div>

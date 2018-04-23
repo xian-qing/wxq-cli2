@@ -26,7 +26,7 @@ function* getXintiaoData(action) {
 function* removeData(action) {
     try {
         const list = [];
-        yield put({type: PAGE1_GETLIST, removeId: action.data.id});
+        yield put({type: PAGE1_GETLIST, name: action.data.name});
     } catch (e) {
         yield put({type: PAGE1_GETLIST, message: e.message});
     }

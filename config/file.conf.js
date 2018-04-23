@@ -1,4 +1,5 @@
 module.exports = {
+    isProEnv:process.env.NODE_ENV=="production"?true:false,
     buildDir: 'dist/',
     srcPages: {
         index: "dist/index",
