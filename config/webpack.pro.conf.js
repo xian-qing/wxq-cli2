@@ -22,7 +22,7 @@ let config = function (page) {
             path:path.resolve(fileConfig.srcPages[pageDir]),
             filename:"js/[name].js",
             chunkFilename:"js/[name].js",
-            publicPath:`/static/`
+            publicPath:`/${pageDir}-static/`
         },
         module:{
             rules:[
