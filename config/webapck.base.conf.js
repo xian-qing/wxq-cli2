@@ -99,10 +99,6 @@ const config = {
         //extensions:['.js','.json',".jsx",".css",'.scss'],
         alias: {
             src: path.join(APP_PATH, 'src'),
-            components: path.join(APP_PATH, 'src/index/components'),
-            reducers: path.join(APP_PATH, 'src/index/redux/reducers'),
-            common: path.join(APP_PATH, 'src/index/common'),
-            styles: path.join(APP_PATH, 'src/index/styles')
         }
     },
     plugins: [

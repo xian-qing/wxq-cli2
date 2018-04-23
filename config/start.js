@@ -8,6 +8,7 @@ app.use('/index/',express.static(path.join(APP_PATH,'./dist/index/')));
 app.use('/shop/',express.static(path.join(APP_PATH,'./dist/shop/shop.html')));
 app.use('/index-static',express.static(path.join(APP_PATH,'./dist/index')));
 app.use('/shop-static',express.static(path.join(APP_PATH,'./dist/shop')));
+app.use('/static',express.static(path.join(APP_PATH,'./dist/static')));
 
 app.use('/api', proxy({ target: 'http://119.28.34.31', changeOrigin: true }));
 app.use('/graphql', proxy({ target: 'http://119.28.183.86', changeOrigin: true }));

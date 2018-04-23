@@ -7,7 +7,7 @@ const baseWebpackConfig = require('./webapck.base.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const {srcPages,buildDir,rewrites,proxy} = require('./file.conf')
-
+const express = require('express');
 
 process.env.BABEL_ENV = 'development'
 
@@ -107,9 +107,7 @@ let config = merge(baseWebpackConfig,{
         },
         proxy:proxy,
         before(app){
-            // app.get('/some/path', function(req, res) {
-            //     res.json({ custom: 'response' });
-            // });
+            app.use('/static',express.static(path.join(APP_PATH,'./static')));
         },
         after(){
             console.log(`打开浏览器：http://localhost:${this.port}`)

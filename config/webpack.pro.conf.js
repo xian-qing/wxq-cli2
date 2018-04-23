@@ -8,6 +8,7 @@ const fileConfig = require('./file.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 process.env.BABEL_ENV = 'production'
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let config = function (page) {
     let pageDir = page||'index'
@@ -67,7 +68,8 @@ let config = function (page) {
                 // both options are optional
                 filename: "css/[name].css",
                 chunkFilename: "css/[name].css"
-            })
+            }),
+            new CopyWebpackPlugin([{from: './static/', to: path.join(APP_PATH, './dist/static')}])
 
         ],
         optimization: {
