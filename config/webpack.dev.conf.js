@@ -4,9 +4,10 @@ const merge = require('webpack-merge')
 const path = require('path')
 const APP_PATH = path.join(__dirname, '..');
 const baseWebpackConfig = require('./webapck.base.conf')
-const {srcPages,buildDir,rewrites,proxy} = require('./file.conf')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//var hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
+const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
+const {srcPages,buildDir,rewrites,proxy} = require('./file.conf')
+
 
 process.env.BABEL_ENV = 'development'
 
@@ -85,6 +86,7 @@ let config = merge(baseWebpackConfig,{
     plugins:[
         //热更新
         new webpack.HotModuleReplacementPlugin({}),
+        new FriendlyErrorsPlugin(),
         ...htmlPlugin()
     ],
     devServer:{
