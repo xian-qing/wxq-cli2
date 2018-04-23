@@ -20,8 +20,8 @@ let config = function (page) {
         mode:'production',
         output:{
             path:path.resolve(fileConfig.srcPages[pageDir]),
-            filename:"js/[name].js",
-            chunkFilename:"js/[name].js",
+            filename:"js/[name].[chunkhash:8]js",
+            chunkFilename:"js/[name].[chunkhash:8].js",
             publicPath:`/${pageDir}-static/`
         },
         module:{

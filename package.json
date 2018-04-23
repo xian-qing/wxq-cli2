@@ -40,6 +40,7 @@
     "antd": "^3.4.1",
     "axios": "^0.18.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "gulp": "^3.9.1",
     "history": "^4.7.2",
     "lodash": "^4.17.5",
     "mini-css-extract-plugin": "^0.4.0",
