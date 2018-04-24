@@ -22,6 +22,8 @@ renderWithHotReload(APP);
  */
 if (module.hot) {
     module.hot.accept('./views/app', () => {
+        console.log(123)
+        console.clear()
         let APP = require('./views/app').default;
         const root = document.getElementById('app')
         unmountComponentAtNode(root)

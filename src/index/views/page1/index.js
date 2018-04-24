@@ -74,7 +74,7 @@ class Page1 extends Component {
                         return <div key={i}>{v.name}<Button type="danger" size={'small'} onClick={()=>{removeData(v)}}>删除</Button></div>
                     })}
                 </div>
-                <div>{userInfo}</div>
+                <div>{JSON.stringify(userInfo)}</div>
                 <div>{JSON.stringify(xintiaoData)}</div>
 
             </div>

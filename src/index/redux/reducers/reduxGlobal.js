@@ -4,14 +4,14 @@ import {
 } from '../actions/global';
 
 const initState = {
-    userInfo:null
+    userInfo:{}
 };
 
 export default function reducer(state = initState, action) {
     let count = state.count;
     switch (action.type) {
         case GLABAL_SAVEUSERINFO:
-          state.userInfo = JSON.stringify(action.data)
+          state.userInfo = action.data
             return {
                 ...state
             }
