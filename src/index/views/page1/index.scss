@@ -1,3 +1,9 @@
 .page1{
   background: gold;
+  .img-box{
+    height: 80px;
+    width: 80px;
+    background: url("../../images/loading.png");
+    background-size: contain;
+  }
 }

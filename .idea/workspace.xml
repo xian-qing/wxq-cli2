@@ -2,39 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b6388d5-9be0-49a3-8ced-58f507ce1bb5" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/index/images/loading.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/config/webapck.base.conf.js" afterPath="$PROJECT_DIR$/config/webapck.base.conf.js" />
       <change beforePath="$PROJECT_DIR$/config/webpack.pro.conf.js" afterPath="$PROJECT_DIR$/config/webpack.pro.conf.js" />
-      <change beforePath="$PROJECT_DIR$/dist/index/index.html" afterPath="$PROJECT_DIR$/dist/index/index.html" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/app.230cdcaajs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/app.b2fc2ac5js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/app.ddc080b9js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/app.e0210907js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/login.07fe2d0e.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/login.83f989aa.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/login.c229010d.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/page1.3efa59f3.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/page1.8836c934.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/page1.92dd4154.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/page2.3063fd9e.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/page2.51b3de35.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/page2.e616e090.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/vendor.41e8f6cejs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/vendor.44534658js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index/js/vendor.78ff12cejs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/css/app.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/css/login.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/css/page1.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/css/page2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/js/app.36f19288js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/js/app.8046259bjs" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/js/login.6364fb81.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/js/page1.588cdc47.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/js/page2.dc0cd59f.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/js/vendor.6c5b4226js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/js/vendor.b24fa566js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/shop/shop.html" afterPath="$PROJECT_DIR$/dist/shop/shop.html" />
-      <change beforePath="$PROJECT_DIR$/dist/static/staticIndex.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/index/views/page1/index.js" afterPath="$PROJECT_DIR$/src/index/views/page1/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/index/views/page1/index.scss" afterPath="$PROJECT_DIR$/src/index/views/page1/index.scss" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -63,11 +37,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/index/views/page1/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="866">
-                  <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+                <state relative-caret-position="216">
+                  <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#39#0" expanded="true" />
                   </folding>
@@ -85,11 +59,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="webpack.pro.conf.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="webpack.pro.conf.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/webpack.pro.conf.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="530">
-                  <caret line="82" column="68" lean-forward="false" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
+                <state relative-caret-position="135">
+                  <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
                   <folding />
                 </state>
               </provider>
@@ -144,8 +118,8 @@
           <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index/views/page1/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -177,16 +151,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="axios.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/shop/API/axios.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/shop/index.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -195,6 +159,16 @@
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="webapck.base.conf.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/config/webapck.base.conf.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="435">
+                  <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -211,11 +185,31 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="webpack.dev.conf.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/config/webpack.dev.conf.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="37" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
                   <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="455">
+                  <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -231,21 +225,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_reset.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/index/styles/_reset.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="226">
-                  <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="2" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="start.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="start.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/start.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
                   <folding />
                 </state>
               </provider>
@@ -274,7 +258,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>effects</find>
       <find>...effects</find>
       <find>HotModuleReplacementPlugin</find>
       <find>react-hot-loader</find>
@@ -304,6 +287,7 @@
       <find>console.log(123123)</find>
       <find>const page1 = asyncComponent(() =&gt; import(/* webpackChunkName: &quot;js/page2&quot; */ &quot;../views/page1/index.js&quot;));</find>
       <find>displayName</find>
+      <find>extract-text-webpack-plugin</find>
     </findStrings>
     <replaceStrings>
       <replace>PAGE1</replace>
@@ -345,14 +329,12 @@
         <option value="$PROJECT_DIR$/src/index/views/login/index.scss" />
         <option value="$PROJECT_DIR$/src/index/views/login/index.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/index/views/404/index.js" />
         <option value="$PROJECT_DIR$/src/index/router/router.js" />
         <option value="$PROJECT_DIR$/src/shop/router/router.js" />
         <option value="$PROJECT_DIR$/src/shop/shop.html" />
         <option value="$PROJECT_DIR$/src/shop/views/page1/index.js" />
         <option value="$PROJECT_DIR$/config/build.js" />
-        <option value="$PROJECT_DIR$/config/webapck.base.conf.js" />
         <option value="$PROJECT_DIR$/src/index/index.html" />
         <option value="$PROJECT_DIR$/config/webpack.dev.conf.js" />
         <option value="$PROJECT_DIR$/src/index/redux/saga/sagas.js" />
@@ -362,7 +344,6 @@
         <option value="$PROJECT_DIR$/src/index/index.js" />
         <option value="$PROJECT_DIR$/static/staticIndex.js" />
         <option value="$PROJECT_DIR$/static/wxq-cli.js" />
-        <option value="$PROJECT_DIR$/src/index/views/page1/index.scss" />
         <option value="$PROJECT_DIR$/src/shop/index.js" />
         <option value="$PROJECT_DIR$/config/start.js" />
         <option value="$PROJECT_DIR$/src/index/redux/actions/page1.js" />
@@ -371,9 +352,12 @@
         <option value="$PROJECT_DIR$/config/file.conf.js" />
         <option value="$PROJECT_DIR$/src/index/redux/store.js" />
         <option value="$PROJECT_DIR$/src/index/redux/reducers/page1.js" />
-        <option value="$PROJECT_DIR$/src/index/views/page1/index.js" />
         <option value="$PROJECT_DIR$/src/index/redux/reducers/reduxGlobal.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/webpack.pro.conf.js" />
+        <option value="$PROJECT_DIR$/config/webapck.base.conf.js" />
+        <option value="$PROJECT_DIR$/src/index/views/page1/index.scss" />
+        <option value="$PROJECT_DIR$/src/index/views/page1/index.js" />
       </list>
     </option>
   </component>
@@ -393,7 +377,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2560" />
+    <option name="x" value="-2221" />
     <option name="y" value="-540" />
     <option name="width" value="1962" />
     <option name="height" value="1301" />
@@ -431,25 +415,28 @@
             <path>
               <item name="wxq-cli2" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxq-cli2" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wxq-cli2" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxq-cli2" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wxq-cli2" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxq-cli2" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wxq-cli2" type="b2602c69:ProjectViewProjectNode" />
               <item name="wxq-cli2" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="page1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -466,11 +453,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/index/images" />
       <recent name="$PROJECT_DIR$/src/shop" />
       <recent name="$PROJECT_DIR$/src/index/views" />
       <recent name="$PROJECT_DIR$/src/index/styles" />
       <recent name="$PROJECT_DIR$/src/index/redux/actions" />
-      <recent name="$PROJECT_DIR$/src/index/redux/reducers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -507,18 +494,18 @@
       <option name="presentableId" value="Default" />
       <updated>1524105716045</updated>
       <workItem from="1524105717977" duration="49983000" />
-      <workItem from="1524224660562" duration="43574000" />
+      <workItem from="1524224660562" duration="46809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93557000" />
+    <option name="totallyTimeSpent" value="96792000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2560" y="-540" width="1962" height="1301" extended-state="0" />
+    <frame x="-2221" y="-540" width="1962" height="1301" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13137558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21174653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -526,7 +513,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946846" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37645108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37645108" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -766,26 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/build.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="12" lean-forward="false" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/webapck.base.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="97" column="14" lean-forward="false" selection-start-line="97" selection-start-column="14" selection-end-line="97" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -872,14 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/webpack.dev.conf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index/router/asyncCompont.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -908,14 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index/views/page1/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/file.conf.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -940,16 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index/views/page1/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index/redux/reducers/page1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -967,14 +912,6 @@
           <folding>
             <element signature="e#0#77#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/start.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,11 +935,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/start.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/webpack.pro.conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="82" column="68" lean-forward="false" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
+        <state relative-caret-position="135">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/webapck.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index/views/page1/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index/views/page1/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {hot} from 'react-hot-loader'
 import PropTypes from 'prop-types'
 import './index.scss'
+import Loading from '../../images/loading.png'
 import {
     Button,
     Input,
@@ -55,7 +56,14 @@ class Page1 extends Component {
         let {getData,pageList = [],removeData,userInfo,saveUserInfo,getXintiaoData,xintiaoData} = this.props
         return (
             <div className="page1">
-                ddd
+                <div className='img-box'>
+
+                </div>
+                <div>
+                    <img src={Loading} alt=""/>
+                </div>
+
+
                 <Button type="primary" onClick={()=>{getData()}} >获取page1数据</Button>
                 <Button type="primary" onClick={()=>{this.jump('/page2')}}>跳转到page2</Button>
                 <Button type="primary" onClick={()=>{saveUserInfo({uid:12,name:"wxq"})}}>保存用户信息</Button>
