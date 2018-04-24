@@ -9,6 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 process.env.BABEL_ENV = 'production'
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 let config = function (page) {
     let pageDir = page||'index'
@@ -21,7 +22,7 @@ let config = function (page) {
         mode:'production',
         output:{
             path:path.resolve(fileConfig.srcPages[pageDir]),
-            filename:"js/[name].[chunkhash:8]js",
+            filename:"js/[name].[chunkhash:8].js",
             chunkFilename:"js/[name].[chunkhash:8].js",
             publicPath:`/${pageDir}-static/`
         },
@@ -59,6 +60,11 @@ let config = function (page) {
             ]
         },
         plugins:[
+            // new CleanWebpackPlugin(['dist'],{
+            //     root: APP_PATH,       　　　　　　　　　　//根目录
+            //     verbose:  true,        　　　　　　　　　　//开启在控制台输出信息
+            //     dry:      false        　　　　　　　　　　//启用删除文件
+            // }),
             new HtmlWebpackPlugin({
                 filename: `${pageDir}.html`,
                 template: path.join(APP_PATH, `src/${pageDir}/${pageDir}.html`)
