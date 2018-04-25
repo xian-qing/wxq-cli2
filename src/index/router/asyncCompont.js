@@ -4,7 +4,7 @@ export const asyncComponent = (loadComponent) => (
   class AsyncComponent extends React.Component {
     state = {
       Component: null,
-      loading: <div>loading</div>
+      loading: <div>Loading...</div>
     };
 
     componentWillMount() {

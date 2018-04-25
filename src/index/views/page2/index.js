@@ -5,16 +5,17 @@ import {Button,Input} from 'antd';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux'
 import {getData,removeData} from '../../redux/actions/page1'
+import {increment_async,lessen} from '../../redux/actions/page2'
 //import * as CommonActions from '../../redux/reducers/reduxCommon';
 @connect((state) => {
     return ({
-        pageData: state.page1.pageData,
+        Page2Conut: state.page2.count,
         pageList: state.page1.pageList,
     })
 },(dispatch)=>{
     return {
-        getData:bindActionCreators(getData,dispatch),
-        removeData:bindActionCreators(removeData,dispatch),
+        increment_async:bindActionCreators(increment_async,dispatch),
+        lessen:bindActionCreators(lessen,dispatch),
     }
 })
 
@@ -44,19 +45,12 @@ class Page2 extends Component {
         // },100)
     }
     render() {
-        let {getData,pageList,removeData} = this.props
+        let {pageList,increment_async,Page2Conut,lessen} = this.props
         return (
             <div>
-                <Input placeholder="Basic usage" />
-                {/*<Input*/}
-                    {/*type='text'*/}
-                    {/*ref={(input) => this.input = input}/>*/}
-                {/*<Input*/}
-                    {/*type='text'*/}
-                    {/*ref={(input2) => this.input2 = input2}/>*/}
-                <Button onClick={() => {
-                    this.handleSubmit()
-                }}>Submit</Button>
+                <Button onClick={()=>{increment_async()}}>异步增加</Button>
+                <Button onClick={()=>{lessen()}}>减少</Button>
+                <Button >{Page2Conut}</Button>
 
                 <Button type="primary" onClick={()=>{this.jump()}}>返回</Button>
                 <div>
