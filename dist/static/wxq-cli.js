@@ -1,2 +1,12 @@
 //静态引入使用
-console.log('wxq-cli')
+
+console.info(`%c
+             ┏┓     ┏┓
+            ┏┛┻━━━━━┛┻┓
+            ┃         ┃    ***** by wxq
+            ┃  ┳   ┳  ┃    神兽保佑
+            ┃         ┃    代码无BUG！
+            ┃    v    ┃
+            ┗━┓　　　┏━┛
+              ┃┫┫ ┃┫┫
+              ┗┻┛ ┗┻┛    `,"color:gold")

@@ -21,6 +21,6 @@ app.get('/index/*', function(req, response){
 app.get('/shop/*', function(req, response){
     response.sendFile(path.resolve(APP_PATH,'./dist/shop/shop.html'))
 });
-app.listen(8081,()=>{
+app.listen(8080,()=>{
     console.log("server running ");
 });

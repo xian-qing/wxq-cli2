@@ -1022,4 +1022,9 @@ a.ant-btn-sm {
 
 .page1 {
   background: gold; }
+  .page1 .img-box {
+    height: 80px;
+    width: 80px;
+    background: url(/index-static/image/loading.png);
+    background-size: contain; }
 
